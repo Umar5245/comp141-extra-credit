@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#could not alias in the shell script so I used a function to print the date instead
+today() {
+	date +%Y-%m-%d
+}
+
 mkdir output
 cp my_text_file.txt output/
 cd output
@@ -7,7 +12,6 @@ cat my_text_file.txt > read.txt
 pwd > pwd.txt
 ls > ls.txt
 cp my_text_file.txt copy.txt
-alias today="date +%Y-%m-%d"
 today > date.txt
 wc -w my_text_file.txt | awk '{print $1}' > textcount.txt
 ps | head -n 5 > process.txt

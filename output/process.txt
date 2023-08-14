@@ -1,0 +1,5 @@
+  PID TTY           TIME CMD
+11888 ttys002    0:00.03 /bin/zsh -il
+12072 ttys004    0:14.30 /Library/Frameworks/R.framework/Resources/bin/exec/R --no-save --no-restore
+48874 ttys005    0:00.04 -zsh
+49083 ttys005    0:00.01 /bin/bash ./main.sh
